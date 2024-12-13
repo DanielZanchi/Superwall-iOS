@@ -36,11 +36,11 @@ class Cache {
       .first?
       .appendingPathComponent(Cache.cacheDirectoryPrefix)
     userSpecificDocumentUrl = fileManager
-      .urls(for: .documentDirectory, in: .userDomainMask)
+		  .urls(for: .applicationSupportDirectory, in: .userDomainMask)
       .first?
       .appendingPathComponent(Cache.userSpecificDocumentDirectoryPrefix)
     appSpecificDocumentUrl = fileManager
-      .urls(for: .documentDirectory, in: .userDomainMask)
+      .urls(for: .applicationSupportDirectory, in: .userDomainMask)
       .first?
       .appendingPathComponent(Cache.appSpecificDocumentDirectoryPrefix)
 
